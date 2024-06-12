@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
+
+.btn:active {
+    background-color: #c0c0c0;
+}
+
+.btn[data-value="="] {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn[data-value="="]:hover {
+    background-color: #45a049;
+}
+
+.btn[data-value="C"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn[data-value="C"]:hover {
+    background-color: #e53935;
+}
